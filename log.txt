@@ -1,0 +1,170 @@
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 0, 'Lines': [{'Product': 'A', 'Quantity': 2}, {'Product': 'E', 'Quantity': 4}], 'Header': 0}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 250, 'C': 250, 'B': 250, 'E': 250, 'D': 250}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'A', 'Quantity': 2}, {'Product': 'E', 'Quantity': 4}]
+INFO:root:allocated order -->[{'Product': 'A', 'Quantity': 2}, {'Product': 'E', 'Quantity': 4}]
+INFO:root:back order     -->[{'Product': 'A', 'Quantity': 0}, {'Product': 'E', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 248, 'C': 250, 'B': 250, 'E': 246, 'D': 250}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 1, 'Lines': [{'Product': 'A', 'Quantity': 3}, {'Product': 'D', 'Quantity': 1}], 'Header': 0}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 248, 'C': 250, 'B': 250, 'E': 246, 'D': 250}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'A', 'Quantity': 3}, {'Product': 'D', 'Quantity': 1}]
+INFO:root:allocated order -->[{'Product': 'A', 'Quantity': 3}, {'Product': 'D', 'Quantity': 1}]
+INFO:root:back order     -->[{'Product': 'A', 'Quantity': 0}, {'Product': 'D', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 245, 'C': 250, 'B': 250, 'E': 246, 'D': 249}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 2, 'Lines': [{'Product': 'A', 'Quantity': 4}, {'Product': 'E', 'Quantity': 1}], 'Header': 0}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 245, 'C': 250, 'B': 250, 'E': 246, 'D': 249}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'A', 'Quantity': 4}, {'Product': 'E', 'Quantity': 1}]
+INFO:root:allocated order -->[{'Product': 'A', 'Quantity': 4}, {'Product': 'E', 'Quantity': 1}]
+INFO:root:back order     -->[{'Product': 'A', 'Quantity': 0}, {'Product': 'E', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 241, 'C': 250, 'B': 250, 'E': 245, 'D': 249}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 0, 'Lines': [{'Product': 'A', 'Quantity': 2}, {'Product': 'C', 'Quantity': 1}, {'Product': 'B', 'Quantity': 4}, {'Product': 'E', 'Quantity': 2}, {'Product': 'D', 'Quantity': 3}], 'Header': 1}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 241, 'C': 250, 'B': 250, 'E': 245, 'D': 249}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'A', 'Quantity': 2}, {'Product': 'C', 'Quantity': 1}, {'Product': 'B', 'Quantity': 4}, {'Product': 'E', 'Quantity': 2}, {'Product': 'D', 'Quantity': 3}]
+INFO:root:allocated order -->[{'Product': 'A', 'Quantity': 2}, {'Product': 'C', 'Quantity': 1}, {'Product': 'B', 'Quantity': 4}, {'Product': 'E', 'Quantity': 2}, {'Product': 'D', 'Quantity': 3}]
+INFO:root:back order     -->[{'Product': 'A', 'Quantity': 0}, {'Product': 'C', 'Quantity': 0}, {'Product': 'B', 'Quantity': 0}, {'Product': 'E', 'Quantity': 0}, {'Product': 'D', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 239, 'C': 249, 'B': 246, 'E': 243, 'D': 246}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 1, 'Lines': [{'Product': 'A', 'Quantity': 2}, {'Product': 'C', 'Quantity': 4}, {'Product': 'B', 'Quantity': 4}, {'Product': 'E', 'Quantity': 1}, {'Product': 'D', 'Quantity': 2}], 'Header': 1}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 239, 'C': 249, 'B': 246, 'E': 243, 'D': 246}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'A', 'Quantity': 2}, {'Product': 'C', 'Quantity': 4}, {'Product': 'B', 'Quantity': 4}, {'Product': 'E', 'Quantity': 1}, {'Product': 'D', 'Quantity': 2}]
+INFO:root:allocated order -->[{'Product': 'A', 'Quantity': 2}, {'Product': 'C', 'Quantity': 4}, {'Product': 'B', 'Quantity': 4}, {'Product': 'E', 'Quantity': 1}, {'Product': 'D', 'Quantity': 2}]
+INFO:root:back order     -->[{'Product': 'A', 'Quantity': 0}, {'Product': 'C', 'Quantity': 0}, {'Product': 'B', 'Quantity': 0}, {'Product': 'E', 'Quantity': 0}, {'Product': 'D', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 237, 'C': 245, 'B': 242, 'E': 242, 'D': 244}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 2, 'Lines': [{'Product': 'B', 'Quantity': 2}, {'Product': 'D', 'Quantity': 3}], 'Header': 1}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 237, 'C': 245, 'B': 242, 'E': 242, 'D': 244}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'B', 'Quantity': 2}, {'Product': 'D', 'Quantity': 3}]
+INFO:root:allocated order -->[{'Product': 'B', 'Quantity': 2}, {'Product': 'D', 'Quantity': 3}]
+INFO:root:back order     -->[{'Product': 'B', 'Quantity': 0}, {'Product': 'D', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 237, 'C': 245, 'B': 240, 'E': 242, 'D': 241}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 0, 'Lines': [{'Product': 'C', 'Quantity': 4}, {'Product': 'B', 'Quantity': 3}, {'Product': 'E', 'Quantity': 3}, {'Product': 'D', 'Quantity': 4}], 'Header': 2}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 237, 'C': 245, 'B': 240, 'E': 242, 'D': 241}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'C', 'Quantity': 4}, {'Product': 'B', 'Quantity': 3}, {'Product': 'E', 'Quantity': 3}, {'Product': 'D', 'Quantity': 4}]
+INFO:root:allocated order -->[{'Product': 'C', 'Quantity': 4}, {'Product': 'B', 'Quantity': 3}, {'Product': 'E', 'Quantity': 3}, {'Product': 'D', 'Quantity': 4}]
+INFO:root:back order     -->[{'Product': 'C', 'Quantity': 0}, {'Product': 'B', 'Quantity': 0}, {'Product': 'E', 'Quantity': 0}, {'Product': 'D', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 237, 'C': 241, 'B': 237, 'E': 239, 'D': 237}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 1, 'Lines': [{'Product': 'A', 'Quantity': 2}, {'Product': 'B', 'Quantity': 2}], 'Header': 2}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 237, 'C': 241, 'B': 237, 'E': 239, 'D': 237}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'A', 'Quantity': 2}, {'Product': 'B', 'Quantity': 2}]
+INFO:root:allocated order -->[{'Product': 'A', 'Quantity': 2}, {'Product': 'B', 'Quantity': 2}]
+INFO:root:back order     -->[{'Product': 'A', 'Quantity': 0}, {'Product': 'B', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 235, 'C': 241, 'B': 235, 'E': 239, 'D': 237}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 2, 'Lines': [{'Product': 'E', 'Quantity': 5}], 'Header': 2}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 235, 'C': 241, 'B': 235, 'E': 239, 'D': 237}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'E', 'Quantity': 5}]
+INFO:root:allocated order -->[{'Product': 'E', 'Quantity': 5}]
+INFO:root:back order     -->[{'Product': 'E', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 235, 'C': 241, 'B': 235, 'E': 234, 'D': 237}
+INFO:root:----------------------------
+
+
+INFO:root:-----------processing order--------
+INFO:root:{'stream_id': 0, 'Lines': [{'Product': 'C', 'Quantity': 2}, {'Product': 'E', 'Quantity': 5}], 'Header': 3}
+INFO:root:----------------------------------
+INFO:root:**Valid order**
+INFO:root:inventory before allocation
+INFO:root:----------------------------
+INFO:root:{'A': 235, 'C': 241, 'B': 235, 'E': 234, 'D': 237}
+INFO:root:----------------------------
+INFO:root:actual order  -->[{'Product': 'C', 'Quantity': 2}, {'Product': 'E', 'Quantity': 5}]
+INFO:root:allocated order -->[{'Product': 'C', 'Quantity': 2}, {'Product': 'E', 'Quantity': 5}]
+INFO:root:back order     -->[{'Product': 'C', 'Quantity': 0}, {'Product': 'E', 'Quantity': 0}]
+INFO:root:inventory after allocation 
+INFO:root:----------------------------
+INFO:root:{'A': 235, 'C': 239, 'B': 235, 'E': 229, 'D': 237}
+INFO:root:----------------------------
+
+
